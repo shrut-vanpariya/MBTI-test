@@ -22,7 +22,7 @@ export default function Component() {
 
     const handleLogin = async () => {
         try {
-            const res = await fetch("http://localhost:5000/api/v1/login", {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/v1/login`, {
                 method: "POST",
                 body: JSON.stringify({
                     "username": username,
