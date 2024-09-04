@@ -45,11 +45,12 @@ export default function Component() {
                 </div>
               </div>
               <Image
-                src="/placeholder.svg"
+                src="/mbti.jpg"
                 width="550"
                 height="550"
                 alt="Hero"
-                className="mx-auto aspect-square overflow-hidden rounded-xl object-cover "
+                priority={true}
+                className="mx-auto aspect-square overflow-hidden rounded-xl"
               />
             </div>
           </div>
@@ -164,7 +165,7 @@ export default function Component() {
                     Take our comprehensive MBTI assessment to uncover your unique personality preferences.
                   </p>
                   <Button className="inline-flex h-10 items-center justify-center rounded-md px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
-                    Start the Test
+                    <Link href={"/test"}>Start the Test</Link>
                   </Button>
                 </div>
                 <div className="space-y-4 flex flex-col items-center text-center">
